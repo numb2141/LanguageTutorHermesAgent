@@ -1,0 +1,9 @@
+services:
+  tutor-idiomas-bot:
+    build: .
+    container_name: tutor_idiomas_bot
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./dados:/app/dados
